@@ -25,20 +25,25 @@ def adicionar_questao(pergunta):
     with open('intents.json') as arquivo:
         data = json.load(arquivo)
         data['intents'].append(add_json)
-        print(data)
+
     with open('intents.json', 'w', encoding='utf8') as arquivo:
         jsonString = json.dumps(data,ensure_ascii=False)
         arquivo.write(jsonString)
 
 print("Bem vindo ao Chatbot")
 
+with open('intents.json') as arquivo:
+        data = json.load(arquivo)
+        for item in data['intents']:
+            print(item['tag'])
+
 pergunta = "ola"
 resposta, intencao = myChatBot.chatbot_response(pergunta)
 
 while (intencao[0]['intent']!="despedida" or float(intencao[0]['probability'])*100<=78):
+    imprimir = True
     pergunta = input("posso lhe ajudar com algo?")
     resposta, intencao = myChatBot.chatbot_response(pergunta)
-    
     if( float(intencao[0]['probability'])*100 <=78):
         questa = int(input("não posso responder a essa questão com precisão\nSe quiser, você pode adidciona-la\n1 - Sim\n2 - Não\n"))
         if questa == 2:
@@ -56,9 +61,8 @@ while (intencao[0]['intent']!="despedida" or float(intencao[0]['probability'])*1
     if(intencao[0]['intent'] == 'orientador' and orientador == False):
         resp = int(input("Você já sabe o que um orientador faz?\n1 - Sim\n2 - Não\n"))
         if resp == 2:
-
             print("Um orientador serve para te aconselhar e ajudar a progredir no seu TCC.")
-            
+
             orientador = True
             imprimir = True
         elif resp == 1:
@@ -68,6 +72,5 @@ while (intencao[0]['intent']!="despedida" or float(intencao[0]['probability'])*1
     if(imprimir):
         print(resposta)
     
-    imprimir = True
 
 print("Foi um prazer atendê-lo")
