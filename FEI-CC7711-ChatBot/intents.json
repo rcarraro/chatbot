@@ -1,0 +1,168 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "Ola",
+        "Opa",
+        "Oi",
+        "tudo bem",
+        "salve"
+      ],
+      "responses": [
+        "Oi",
+        "Ola"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "valeu",
+        "tchau",
+        "Obrigado",
+        "tks"
+      ],
+      "responses": [
+        "Ate breve",
+        "Falou"
+      ]
+    },
+    {
+      "tag": "data_entrega",
+      "patterns": [
+        "Quando sera o TCC?",
+        "Qual a data final para entrega do TCC?",
+        "Qual a data limite para entrega do Trabalho de Conclusao de Curso?"
+      ],
+      "responses": [
+        "no dia 11 de junho"
+      ]
+    },
+    {
+      "tag": "orientador",
+      "patterns": [
+        "Quem pode ser meu orientador?",
+        "Quais professores estao disponiveis?",
+        "Quem sao os professores validos para orientar um TCC?"
+      ],
+      "responses": [
+        "Qualquer professor da FEI pode ser seu orientador de TCC."
+      ]
+    },
+    {
+      "tag": "trabalhos_tcc",
+      "patterns": [
+        "O que eu posso fazer de TCC?",
+        "Quais sao os trabalhos validos para um trabalho de conclusao de curso?"
+      ],
+      "responses": [
+        "Voce pode fazer o que voce quiser no TCC, desde que esteja relacionado com sua area de estudo aqui na FEI."
+      ]
+    },
+    {
+      "tag": "orientador_func",
+      "patterns": [
+        "Qual a funcao de um orientador no meu TCC?",
+        "Qual a funcao de um orientador no meu trabalho de conclusao de curso?",
+        "O que um orientador faz ?"
+      ],
+      "responses": [
+        "Um orientador serve para te aconselhar e ajudar a progredir no seu TCC."
+      ]
+    },
+    {
+      "tag": "pesquisa_TCC",
+      "patterns": [
+        "O que eu devo pesquisar para o meu TCC?",
+        "O que eu devo pesquisar para o meu  trabalho de conclusao de curso?"
+      ],
+      "responses": [
+        "Voce deve procurar trabalhos relacionados ao seu tema."
+      ]
+    },
+    {
+      "tag": "plagio_copia",
+      "patterns": [
+        "Posso copiar algo para o meu TCC?",
+        "Posso usar algum outro TCC como entrega?",
+        "Copias sao permitidas?"
+      ],
+      "responses": [
+        "Caso haja copia o grupo tera o seu trabalho zerado. Recomenda-se apenas utilizar como inspiracoes e, no maximo fazer citacoes."
+      ]
+    },
+    {
+      "tag": "grupos",
+      "patterns": [
+        "Grupos maiores que 4 pessoas sao permitidos?",
+        "Posso fazer um grupo com mais de quatro pessoas?",
+        "Podem ser feitos grupos de 5 pessoas?"
+      ],
+      "responses": [
+        "Recomendamos um grupo de 4 pessoas. Sao permitidos grupos de ate 5 pessoas, mais do que isso, o peso da banca acaba se tornando muito alto."
+      ]
+    },
+    {
+      "tag": "funcionamento_tcc",
+      "patterns": [
+        "Como funciona o TCC?",
+        "Como e o TCC?",
+        "Dinamica do TCC?"
+      ],
+      "responses": [
+        "Os alunos tem dois semestres para desenvolver todas as atividades relacionadas ao trabalho, e no final de cada semestre serao avaliados por uma banca de professores."
+      ]
+    },
+    {
+      "tag": "tcc",
+      "patterns": [
+        "O que e o TCC?",
+        "TCC?"
+      ],
+      "responses": [
+        "O TCC e um trabalho de conclusao de curso. Um trabalho que todos os integrantes de uma universidade devem apresentar para conseguirem o seu diploma."
+      ]
+    },
+    {
+      "tag": "banca",
+      "patterns": [
+        "O que e uma banca de tcc?",
+        "Pra que serve uma banca de TCC?"
+      ],
+      "responses": [
+        "A banca de TCC e formada por pessoas que irao avaliar todo o trabalho de conclusao."
+      ],
+      "context": [
+        "tcc"
+      ]
+    },
+    {
+      "tag": "form_tcc",
+      "patterns": [
+        "Como deve ser formulado um TCC?",
+        "Como eu faco um TCC?"
+      ],
+      "responses": [
+        "Um TCC deve ser composto de introducao e objetivos do trabalho;Conceituacao do problema;Revisao da literatura;Desenvolvimento de arquitetura de solucao; Discussao dos resultados e consideracoes finais."
+      ]
+    },
+    {
+      "tag": "um_mais_um",
+      "patterns": [
+        "VocÃª sabe quanto Ã© 1 + 1 ?"
+      ],
+      "responses": [
+        "2"
+      ]
+    },
+    {
+      "tag": "lab_ia",
+      "patterns": [
+        "Quem e o nosso professor de lab(IA)"
+      ],
+      "responses": [
+        "O nosso professor de ia e o Destro."
+      ]
+    }
+  ]
+}
