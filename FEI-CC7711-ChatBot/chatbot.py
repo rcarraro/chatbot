@@ -18,6 +18,8 @@ from tensorflow.keras.optimizers import SGD
 
 import random
 print()
+print()
+print()
 class ChatBot:
     words = []
     classes = []
